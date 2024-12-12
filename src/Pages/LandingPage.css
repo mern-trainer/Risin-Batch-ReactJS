@@ -1,0 +1,19 @@
+.hero-container{
+    position: relative;
+}
+
+.hero-container .hero-text{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -20%);
+    text-align: center;
+    color: white;
+}
+
+.hero-container .hero-text button{
+    padding: 12px;
+    padding-inline: 18px;
+    border: none;
+    background-color: white;
+}

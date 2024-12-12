@@ -1,0 +1,31 @@
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding-inline: 35px;
+}
+
+.nav-container ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-container button{
+    padding: 10px;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.nav-container button:hover{ 
+    /* psudo class */
+    background-color: rgb(231, 231, 231);
+}
+
+.nav-container .nav-items-right {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
