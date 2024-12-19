@@ -9,3 +9,11 @@ body{
     background: #fff;
     font-family: "Parkinsans", serif;
 }
+.hover-scale{    
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.hover-scale:hover{
+    transform: scale(0.8);
+}

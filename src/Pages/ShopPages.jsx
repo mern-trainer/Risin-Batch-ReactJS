@@ -3,12 +3,12 @@ import { products } from "../Constants/products"
 
 const ShopPages = () => {
 
-    return <div className="d-flex flex-wrap gap-3 justify-content-center">
+    return <div className="d-flex flex-wrap gap-2 justify-content-center py-3 bg-secondary">
         {
             products.map(product => {
-                return <div key={product.id} style={{ width: "14rem" }}>
-                    <div>
-                        <img src={product.image} alt={product.title} style={{width: "14rem", aspectRatio: 1/1}}/>
+                return <div key={product.id} className="bg-light p-2 rounded" style={{ width: "15rem" }}>
+                    <div className="overflow-hidden">
+                        <img src={product.image} alt={product.title} className="w-100 hover-scale" style={{aspectRatio: 1/1}}/>
                     </div>
                     <div>
                         <h5 className="text-truncate">{product.title}</h5>
