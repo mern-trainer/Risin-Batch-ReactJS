@@ -12,7 +12,7 @@ const LandingPage = () => {
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
-                    <Nav className="me-auto">
+                    <Nav className="me-auto">  
                         <Nav.Link href="#home">Home</Nav.Link>
                         <Nav.Link href="#link">Link</Nav.Link>
                     </Nav>
@@ -22,13 +22,13 @@ const LandingPage = () => {
 
         <Carousel nextIcon={<FaArrowRight />} prevIcon={<FaArrowLeft />}>
             <Carousel.Item interval={2000}>
-                <Image src="https://i.ytimg.com/vi/7P7SodRbwTU/maxresdefault.jpg" className="vw-100" style={{height: "500px"}}/>
+                <Image loading="lazy" src="https://i.ytimg.com/vi/7P7SodRbwTU/maxresdefault.jpg" className="vw-100" style={{height: "500px"}}/>
             </Carousel.Item>
             <Carousel.Item interval={2000}>
-                <Image src="https://graphicsfamily.com/wp-content/uploads/edd/2024/11/Creative-E-Commerce-Shoes-Banner-Design-Free-PSD--scaled.jpg" className="vw-100" style={{height: "500px"}}/>
+                <Image loading="lazy" src="https://graphicsfamily.com/wp-content/uploads/edd/2024/11/Creative-E-Commerce-Shoes-Banner-Design-Free-PSD--scaled.jpg" className="vw-100" style={{height: "500px"}}/>
             </Carousel.Item>
             <Carousel.Item interval={2000}>
-                <Image src="https://i.ytimg.com/vi/f64GdOxJjPE/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAxPhGb84zF25stREqgMB0f6JAJhA" className="vw-100" style={{height: "500px"}}/>
+                <Image loading="lazy" src="https://i.ytimg.com/vi/f64GdOxJjPE/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAxPhGb84zF25stREqgMB0f6JAJhA" className="vw-100" style={{height: "500px"}}/>
             </Carousel.Item>
         </Carousel>
 
@@ -230,7 +230,7 @@ const LandingPage = () => {
             <div>Hello</div>
             <div>Hello</div>
         </Stack>
-        
+
         <Form>
             <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
                 <Form.Label>Email address</Form.Label>
