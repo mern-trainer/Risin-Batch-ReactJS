@@ -4,6 +4,18 @@ import { Button, Card, Carousel, Container, Form, Image, Nav, Navbar, Stack } fr
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa"
 
 const LandingPage = () => {
+
+    const cardList = [
+        { title: "Card 1", description: "Description 1" },
+        { title: "Card 2", description: "Description 2" },
+        { title: "Card 3", description: "Description 3" },
+        { title: "Card 4", description: "Description 4" },
+        { title: "Card 5", description: "Description 5" },
+        { title: "Card 6", description: "Description 6" },
+        { title: "Card 7", description: "Description 7" },
+        { title: "Card 8", description: "Description 8" }
+    ]
+
     return <Fragment>
         <Navbar expand="md" className="bg-body-tertiary">
             <Container fluid>
@@ -33,196 +45,18 @@ const LandingPage = () => {
         </Carousel>
 
         <div className="d-flex overflow-auto gap-3 mt-3">
-            <Card style={{ width: '18rem' }} className="flex-shrink-0">
-                <Card.Img variant="top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXFN2hMdobSowHAAk2_I22T6555OQDMcvzwj4rAyS3MY_z3rUT_IZokHyF3HvUpy-25y0&usqp=CAU" />
-                <Card.Body>
-                    <Card.Title>Card Title</Card.Title>
-                    <Card.Text  className="text-truncate">
-                        Some quick example text to build on the card title and make up the
-                        bulk of the card's content.
-                    </Card.Text>
-                    <Button variant="primary" className="w-100">Go somewhere</Button>
-                </Card.Body>
-            </Card>
-            <Card style={{ width: '18rem' }} className="flex-shrink-0">
-                <Card.Img variant="top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXFN2hMdobSowHAAk2_I22T6555OQDMcvzwj4rAyS3MY_z3rUT_IZokHyF3HvUpy-25y0&usqp=CAU" />
-                <Card.Body>
-                    <Card.Title>Card Title</Card.Title>
-                    <Card.Text className="text-truncate">
-                        Some quick example text to build on the card title and make up the
-                        bulk of the card's content. Some quick example text to build on the card title and make up the
-                        bulk of the card's content.Some quick example text to build on the card title and make up the
-                        bulk of the card's content.Some quick example text to build on the card title and make up the
-                        bulk of the card's content.
-                    </Card.Text>
-                    <Button variant="primary" className="w-100">Go somewhere</Button>
-                </Card.Body>
-            </Card>
-            <Card style={{ width: '18rem' }} className="flex-shrink-0">
-                <Card.Img variant="top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXFN2hMdobSowHAAk2_I22T6555OQDMcvzwj4rAyS3MY_z3rUT_IZokHyF3HvUpy-25y0&usqp=CAU" />
-                <Card.Body>
-                    <Card.Title>Card Title</Card.Title>
-                    <Card.Text  className="text-truncate">
-                        Some quick example text to build on the card title and make up the
-                        bulk of the card's content.
-                    </Card.Text>
-                    <Button variant="primary" className="w-100">Go somewhere</Button>
-                </Card.Body>
-            </Card>
-            <Card style={{ width: '18rem' }} className="flex-shrink-0">
-                <Card.Img variant="top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXFN2hMdobSowHAAk2_I22T6555OQDMcvzwj4rAyS3MY_z3rUT_IZokHyF3HvUpy-25y0&usqp=CAU" />
-                <Card.Body>
-                    <Card.Title>Card Title</Card.Title>
-                    <Card.Text  className="text-truncate">
-                        Some quick example text to build on the card title and make up the
-                        bulk of the card's content.
-                    </Card.Text>
-                    <Button variant="primary" className="w-100">Go somewhere</Button>
-                </Card.Body>
-            </Card>
-            <Card style={{ width: '18rem' }} className="flex-shrink-0">
-                <Card.Img variant="top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXFN2hMdobSowHAAk2_I22T6555OQDMcvzwj4rAyS3MY_z3rUT_IZokHyF3HvUpy-25y0&usqp=CAU" />
-                <Card.Body>
-                    <Card.Title>Card Title</Card.Title>
-                    <Card.Text  className="text-truncate">
-                        Some quick example text to build on the card title and make up the
-                        bulk of the card's content.
-                    </Card.Text>
-                    <Button variant="primary" className="w-100">Go somewhere</Button>
-                </Card.Body>
-            </Card>
-            <Card style={{ width: '18rem' }} className="flex-shrink-0">
-                <Card.Img variant="top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXFN2hMdobSowHAAk2_I22T6555OQDMcvzwj4rAyS3MY_z3rUT_IZokHyF3HvUpy-25y0&usqp=CAU" />
-                <Card.Body>
-                    <Card.Title>Card Title</Card.Title>
-                    <Card.Text  className="text-truncate">
-                        Some quick example text to build on the card title and make up the
-                        bulk of the card's content.
-                    </Card.Text>
-                    <Button variant="primary" className="w-100">Go somewhere</Button>
-                </Card.Body>
-            </Card>
-            <Card style={{ width: '18rem' }} className="flex-shrink-0">
-                <Card.Img variant="top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXFN2hMdobSowHAAk2_I22T6555OQDMcvzwj4rAyS3MY_z3rUT_IZokHyF3HvUpy-25y0&usqp=CAU" />
-                <Card.Body>
-                    <Card.Title>Card Title</Card.Title>
-                    <Card.Text  className="text-truncate">
-                        Some quick example text to build on the card title and make up the
-                        bulk of the card's content.
-                    </Card.Text>
-                    <Button variant="primary" className="w-100">Go somewhere</Button>
-                </Card.Body>
-            </Card>
-            <Card style={{ width: '18rem' }} className="flex-shrink-0">
-                <Card.Img variant="top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXFN2hMdobSowHAAk2_I22T6555OQDMcvzwj4rAyS3MY_z3rUT_IZokHyF3HvUpy-25y0&usqp=CAU" />
-                <Card.Body>
-                    <Card.Title>Card Title</Card.Title>
-                    <Card.Text  className="text-truncate">
-                        Some quick example text to build on the card title and make up the
-                        bulk of the card's content.
-                    </Card.Text>
-                    <Button variant="primary" className="w-100">Go somewhere</Button>
-                </Card.Body>
-            </Card>
-            <Card style={{ width: '18rem' }} className="flex-shrink-0">
-                <Card.Img variant="top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXFN2hMdobSowHAAk2_I22T6555OQDMcvzwj4rAyS3MY_z3rUT_IZokHyF3HvUpy-25y0&usqp=CAU" />
-                <Card.Body>
-                    <Card.Title>Card Title</Card.Title>
-                    <Card.Text  className="text-truncate">
-                        Some quick example text to build on the card title and make up the
-                        bulk of the card's content.
-                    </Card.Text>
-                    <Button variant="primary" className="w-100">Go somewhere</Button>
-                </Card.Body>
-            </Card>
-            <Card style={{ width: '18rem' }} className="flex-shrink-0">
-                <Card.Img variant="top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXFN2hMdobSowHAAk2_I22T6555OQDMcvzwj4rAyS3MY_z3rUT_IZokHyF3HvUpy-25y0&usqp=CAU" />
-                <Card.Body>
-                    <Card.Title>Card Title</Card.Title>
-                    <Card.Text  className="text-truncate">
-                        Some quick example text to build on the card title and make up the
-                        bulk of the card's content.
-                    </Card.Text>
-                    <Button variant="primary" className="w-100">Go somewhere</Button>
-                </Card.Body>
-            </Card>
-            <Card style={{ width: '18rem' }} className="flex-shrink-0">
-                <Card.Img variant="top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXFN2hMdobSowHAAk2_I22T6555OQDMcvzwj4rAyS3MY_z3rUT_IZokHyF3HvUpy-25y0&usqp=CAU" />
-                <Card.Body>
-                    <Card.Title>Card Title</Card.Title>
-                    <Card.Text  className="text-truncate">
-                        Some quick example text to build on the card title and make up the
-                        bulk of the card's content.
-                    </Card.Text>
-                    <Button variant="primary" className="w-100">Go somewhere</Button>
-                </Card.Body>
-            </Card>
-            <Card style={{ width: '18rem' }} className="flex-shrink-0">
-                <Card.Img variant="top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXFN2hMdobSowHAAk2_I22T6555OQDMcvzwj4rAyS3MY_z3rUT_IZokHyF3HvUpy-25y0&usqp=CAU" />
-                <Card.Body>
-                    <Card.Title>Card Title</Card.Title>
-                    <Card.Text  className="text-truncate">
-                        Some quick example text to build on the card title and make up the
-                        bulk of the card's content.
-                    </Card.Text>
-                    <Button variant="primary" className="w-100">Go somewhere</Button>
-                </Card.Body>
-            </Card>
-            <Card style={{ width: '18rem' }} className="flex-shrink-0">
-                <Card.Img variant="top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXFN2hMdobSowHAAk2_I22T6555OQDMcvzwj4rAyS3MY_z3rUT_IZokHyF3HvUpy-25y0&usqp=CAU" />
-                <Card.Body>
-                    <Card.Title>Card Title</Card.Title>
-                    <Card.Text  className="text-truncate">
-                        Some quick example text to build on the card title and make up the
-                        bulk of the card's content.
-                    </Card.Text>
-                    <Button variant="primary" className="w-100">Go somewhere</Button>
-                </Card.Body>
-            </Card>
-            <Card style={{ width: '18rem' }} className="flex-shrink-0">
-                <Card.Img variant="top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXFN2hMdobSowHAAk2_I22T6555OQDMcvzwj4rAyS3MY_z3rUT_IZokHyF3HvUpy-25y0&usqp=CAU" />
-                <Card.Body>
-                    <Card.Title>Card Title</Card.Title>
-                    <Card.Text  className="text-truncate">
-                        Some quick example text to build on the card title and make up the
-                        bulk of the card's content.
-                    </Card.Text>
-                    <Button variant="primary" className="w-100">Go somewhere</Button>
-                </Card.Body>
-            </Card>
-            <Card style={{ width: '18rem' }} className="flex-shrink-0">
-                <Card.Img variant="top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXFN2hMdobSowHAAk2_I22T6555OQDMcvzwj4rAyS3MY_z3rUT_IZokHyF3HvUpy-25y0&usqp=CAU" />
-                <Card.Body>
-                    <Card.Title>Card Title</Card.Title>
-                    <Card.Text  className="text-truncate">
-                        Some quick example text to build on the card title and make up the
-                        bulk of the card's content.
-                    </Card.Text>
-                    <Button variant="primary" className="w-100">Go somewhere</Button>
-                </Card.Body>
-            </Card>
-            <Card style={{ width: '18rem' }} className="flex-shrink-0">
-                <Card.Img variant="top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXFN2hMdobSowHAAk2_I22T6555OQDMcvzwj4rAyS3MY_z3rUT_IZokHyF3HvUpy-25y0&usqp=CAU" />
-                <Card.Body>
-                    <Card.Title>Card Title</Card.Title>
-                    <Card.Text  className="text-truncate">
-                        Some quick example text to build on the card title and make up the
-                        bulk of the card's content.
-                    </Card.Text>
-                    <Button variant="primary" className="w-100">Go somewhere</Button>
-                </Card.Body>
-            </Card>
-            <Card style={{ width: '18rem' }} className="flex-shrink-0">
-                <Card.Img variant="top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXFN2hMdobSowHAAk2_I22T6555OQDMcvzwj4rAyS3MY_z3rUT_IZokHyF3HvUpy-25y0&usqp=CAU" />
-                <Card.Body>
-                    <Card.Title>Card Title</Card.Title>
-                    <Card.Text  className="text-truncate">
-                        Some quick example text to build on the card title and make up the
-                        bulk of the card's content.
-                    </Card.Text>
-                    <Button variant="primary" className="w-100">Go somewhere</Button>
-                </Card.Body>
-            </Card>
+            {
+                cardList.map((card, index) => {
+                    return <Card key={index} style={{ width: '18rem' }} className="flex-shrink-0">
+                        <Card.Img variant="top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXFN2hMdobSowHAAk2_I22T6555OQDMcvzwj4rAyS3MY_z3rUT_IZokHyF3HvUpy-25y0&usqp=CAU" />
+                        <Card.Body>
+                            <Card.Title>{card.title}</Card.Title>
+                            <Card.Text  className="text-truncate">{card.description}</Card.Text>
+                            <Button variant="primary" className="w-100">Go somewhere</Button>
+                        </Card.Body>
+                    </Card>
+                })
+            }
         </div>
 
         <Stack>
