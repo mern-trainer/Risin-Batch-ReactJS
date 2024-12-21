@@ -8,3 +8,9 @@
 8. Create a state variable to store a string and initialize it with a default value. Write a function to clear this string.
 9. Create a state variable to store an array of strings. Initialize it with some default values. Write a function to remove a string from this array by its index.
 10. Create a state variable to store an object with properties `title` and `description`. Initialize it with default values. Write a function to update both properties at once.
+
+11. Create a state variable to store an array of objects, each with properties `id` and `name`. Initialize it with some default values. Write a function to map over this array and return a new array with only the `name` properties.
+12. Create a state variable to store an array of numbers. Initialize it with some default values. Write a function to map over this array and return a new array with each number doubled.
+13. Create a state variable to store an array of strings. Initialize it with some default values. Write a function to map over this array and return a new array with each string converted to uppercase.
+14. Create a state variable to store an array of objects, each with properties `id` and `completed`. Initialize it with some default values. Write a function to map over this array and return a new array with only the objects where `completed` is `true`.
+15. Create a state variable to store an array of objects, each with properties `id` and `value`. Initialize it with some default values. Write a function to map over this array and return a new array with each `value` incremented by 1.
