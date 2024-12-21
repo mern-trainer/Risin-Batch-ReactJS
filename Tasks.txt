@@ -1,0 +1,10 @@
+1. How do you create a state variable to store a number and initialize it to 0? Write a function to increment this number by 1.
+2. Create a state variable to store a string and initialize it to an empty string. Write a function to update this string with user input.
+3. Create a state variable to store an object with properties `name` and `age`. Initialize it with default values. Write a function to update the `name` property.
+4. Create a state variable to store an array of numbers. Initialize it with an empty array. Write a function to add a new number to this array.
+5. Create a state variable to store a boolean value and initialize it to `false`. Write a function to toggle this boolean value.
+6. Create a state variable to store an array of objects, each with properties `id` and `value`. Initialize it with an empty array. Write a function to add a new object to this array.
+7. Create a state variable to store a nested object with properties `user` (an object with `name` and `email`) and `isLoggedIn` (a boolean). Initialize it with default values. Write a function to update the `email` property.
+8. Create a state variable to store a string and initialize it with a default value. Write a function to clear this string.
+9. Create a state variable to store an array of strings. Initialize it with some default values. Write a function to remove a string from this array by its index.
+10. Create a state variable to store an object with properties `title` and `description`. Initialize it with default values. Write a function to update both properties at once.
