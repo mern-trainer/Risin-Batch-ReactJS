@@ -15,13 +15,37 @@ import { useState } from "react"
 
 const States = () => {
 
-    const [counter, setCounter] = useState(0)
+    const [counter, setCounter] = useState({ counter1: 0, counter2: 0 })
 
-    return <div className="d-flex justify-content-center flex-column mt-3 gap-4 align-items-center">
-        <div>{counter}</div>
-        <div className="d-flex gap-3">
-            <button className="btn btn-success" onClick={() => setCounter(counter + 1)}>Increment</button>
-            <button className="btn btn-danger" onClick={() => setCounter(counter - 1)}>Decrement</button>
+    const handleStateUpdate = (type) => {
+        if(type == "increment1"){
+            setCounter({ ...counter, counter1: counter.counter1 + 1 });
+        }
+        if(type == "decrement1"){
+            setCounter({ ...counter, counter1: counter.counter1 - 1 });
+        }
+        if(type == "increment2"){
+            setCounter({ ...counter, counter2: counter.counter2 + 1 });
+        }
+        if(type == "decrement2"){
+            setCounter({ ...counter, counter2: counter.counter2 - 1 });
+        }
+    }
+
+    return <div className="d-flex gap-5 mt-5 justify-content-center">
+        <div className="d-flex flex-column gap-3 align-items-center">
+            <div>Counter 1: {counter.counter1}</div>
+            <div className="d-flex gap-3">
+                <button className="btn btn-success" onClick={() => handleStateUpdate("increment1")}>Increment</button>
+                <button className="btn btn-danger" onClick={() => handleStateUpdate("decrement1")}>Decrement</button>
+            </div>
+        </div>
+        <div className="d-flex flex-column gap-3 align-items-center">
+            <div>Counter 2: {counter.counter2}</div>
+            <div className="d-flex gap-3">
+                <button className="btn btn-success" onClick={() => handleStateUpdate("increment2")}>Increment</button>
+                <button className="btn btn-danger" onClick={() => handleStateUpdate("decrement2")}>Decrement</button>
+            </div>
         </div>
     </div>
 }
