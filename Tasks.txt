@@ -14,3 +14,4 @@
 13. Create a state variable to store an array of strings. Initialize it with some default values. Write a function to map over this array and return a new array with each string converted to uppercase.
 14. Create a state variable to store an array of objects, each with properties `id` and `completed`. Initialize it with some default values. Write a function to map over this array and return a new array with only the objects where `completed` is `true`.
 15. Create a state variable to store an array of objects, each with properties `id` and `value`. Initialize it with some default values. Write a function to map over this array and return a new array with each `value` incremented by 1.
+

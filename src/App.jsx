@@ -5,6 +5,7 @@ import ShopPages from "./Pages/ShopPages"
 import States from "./Pages/states"
 import PasswordGenerator from "./Pages/PasswordGenerator"
 import TodoList from "./Pages/TodoList"
+import A from "./Pages/A"
 
 const App = () => {
     return <Fragment>
@@ -12,7 +13,8 @@ const App = () => {
         {/* <ShopPages /> */}
         {/* <States /> */}
         {/* <PasswordGenerator /> */}
-        <TodoList />
+        {/* <TodoList /> */}
+        <A />
         {/* <ArrayMapping /> */}
     </Fragment>
 }

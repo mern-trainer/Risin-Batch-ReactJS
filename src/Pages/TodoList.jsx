@@ -6,7 +6,7 @@ const TodoList = () => {
     const [todoList, setTodoList] = useState([]);
 
     const handleTodo = () => {
-        // add to todoList
+        
     }
 
     return <div>
