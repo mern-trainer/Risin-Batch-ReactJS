@@ -3,14 +3,20 @@
 import { useState } from "react"
 import B from "./B"
 
+// unidirectional data flow
+
 const A = () => { // parent component
 
     const [counter, setCounter] = useState(0)
     const age = 20
 
+    const handleDataFromChild = (dataFromChild) => {
+        console.log(dataFromChild);
+    }
+
     return <div>
-        Component A <button onClick={() => setCounter(counter + 1)}>Click</button>
-        <B age={age} counter={counter}/> {/* child component */}
+        Component A [{counter}] <button onClick={() => setCounter(counter + 1)}>Click</button>
+        <B age={age} counter={counter} setCounter={setCounter} handleDataFromChild={handleDataFromChild}/> {/* child component */}
     </div>
 }
 

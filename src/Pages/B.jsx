@@ -1,7 +1,8 @@
-const B = ({ age, counter }) => {
+const B = ({ age, handleDataFromChild, counter, setCounter }) => {
 
     return <div>
-        Component B [{age}] [{counter}]
+        <button onClick={() => setCounter(counter + 1)}>Click</button>
+        Component B [{age}]
     </div>
 }
 

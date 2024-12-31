@@ -6,6 +6,7 @@ import States from "./Pages/states"
 import PasswordGenerator from "./Pages/PasswordGenerator"
 import TodoList from "./Pages/TodoList"
 import A from "./Pages/A"
+import { Toaster } from "react-hot-toast"
 
 const App = () => {
     return <Fragment>
@@ -13,9 +14,10 @@ const App = () => {
         {/* <ShopPages /> */}
         {/* <States /> */}
         {/* <PasswordGenerator /> */}
-        {/* <TodoList /> */}
-        <A />
+        <TodoList />
+        {/* <A /> */}
         {/* <ArrayMapping /> */}
+        <Toaster position="top-right"/>
     </Fragment>
 }
 
