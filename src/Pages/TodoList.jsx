@@ -2,11 +2,13 @@ import React, { useState } from 'react'
 import toast from 'react-hot-toast';
 import TaskList from '../Components/TaskList';
 import { v4 as uuidv4 } from "uuid"
+import SingleTaskView from '../Components/SingleTaskView';
 
 const TodoList = () => {
 
     const [todo, setTodo] = useState("")
     const [todoList, setTodoList] = useState([]);
+    const [singleTask, setSingleTask] = useState(null);
 
     const handleTodo = () => {
         if (todo == "") {
@@ -23,18 +25,26 @@ const TodoList = () => {
         // if (todoList.includes(todo)) {
         //     return toast.error("Task already exists")
         // }
-        setTodoList([...todoList, taskObj]);
+        setTodoList([taskObj, ...todoList])
+        setTodo("")
     }
 
-    return <div>
-        <div>
-            <input type="text" onChange={(event) => setTodo(event.target.value)} value={todo} />
-            <button onClick={handleTodo}>Add</button>
+    const handleRemove = (id) => {
+        const response = todoList.filter(todo => todo.id != id)
+        setTodoList(response)
+    }
+
+    return <div className="d-flex flex-column align-items-center mt-5">
+        {/* {singleTask ? <SingleTaskView /> : null } */}
+        {singleTask && <SingleTaskView singleTask={singleTask} setSingleTask={setSingleTask} /> }
+        <div className="w-50">
+            <input className="p-2 w-100" type="text" onChange={(event) => setTodo(event.target.value)} value={todo} placeholder="Enter Task"/>
+            <button onClick={handleTodo} className="w-100 btn btn-success rounded-0 mt-2">Add</button>
         </div>
-        <div className='d-flex flex-column gap-2 mt-4'>
+        <div className='d-flex flex-column gap-2 mt-4 w-50'>
             {
                 todoList.map((item, index) => {
-                    return <TaskList item={item} key={index}/>
+                    return <TaskList setSingleTask={setSingleTask} handleRemove={handleRemove} item={item} key={index}/>
                 })
             }
         </div>

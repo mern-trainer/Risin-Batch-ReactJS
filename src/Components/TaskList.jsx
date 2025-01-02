@@ -1,10 +1,10 @@
-const TaskList = ({ item }) => {
-    console.log(item);
-    return <div className="bg-dark p-2 text-light">
+const TaskList = ({ item, handleRemove, setSingleTask }) => {
+    return <div className="bg-dark p-3 text-light rounded">
         <h4>Title: {item.title}</h4>
-        <p>Status: {item.status}</p>
-        <p>CraetedAt: {item.createdAt}</p>
-        <p>UpdatedAt: {item.updatedAt}</p>
+        <div className="d-flex gap-3">
+            <button className="btn btn-danger w-100" onClick={() => handleRemove(item.id)}>Remove Task</button>
+            <button className="btn btn-info w-100" onClick={() => setSingleTask(item)}>View Task</button>
+        </div>
     </div>
 }
 
