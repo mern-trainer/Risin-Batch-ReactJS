@@ -10,8 +10,7 @@ const TodoList = () => {
     const [todoList, setTodoList] = useState([]);
     const [singleTask, setSingleTask] = useState(null);
     const [editTask, setEditTask] = useState(null);
-
-    console.log(editTask);
+    const [editedTask, setEditedTask] = useState("")
 
     const handleTodo = () => {
         if (todo == "") {
@@ -57,7 +56,7 @@ const TodoList = () => {
         <div className='d-flex flex-column gap-2 mt-4 w-50'>
             {
                 todoList.map((item, index) => {
-                    return <TaskList editTask={editTask} setEditTask={setEditTask} updateStatus={updateStatus} setSingleTask={setSingleTask} handleRemove={handleRemove} item={item} key={index}/>
+                    return <TaskList setEditedTask={setEditedTask} editedTask={editedTask} editTask={editTask} setEditTask={setEditTask} updateStatus={updateStatus} setSingleTask={setSingleTask} handleRemove={handleRemove} item={item} key={index}/>
                 })
             }
         </div>
