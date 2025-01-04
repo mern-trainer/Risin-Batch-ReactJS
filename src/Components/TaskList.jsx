@@ -1,9 +1,12 @@
-import { useState } from "react"
+import { Fragment, useState } from "react"
 
-const TaskList = ({ item, handleRemove, setSingleTask, updateStatus, setEditTask, editTask, setEditedTask, editedTask }) => {
+const TaskList = ({ item, handleRemove, setSingleTask, updateStatus, handleEdit, setEditTask, editTask, setEditedTask, editedTask }) => {
 
     return <div className="bg-dark p-3 text-light rounded">
-        <h4>Title: {editTask?.id == item.id ? <input type="text" placeholder="Enter Task" onChange={(event) => setEditedTask(event.target.value)} value={editedTask}/> : item.title}</h4>
+        <h4>Title: {editTask?.id == item.id ? <Fragment>
+            <input type="text" placeholder="Enter Task" onChange={(event) => setEditedTask(event.target.value)} value={editedTask}/>
+            <button className="btn btn-success" onClick={() => handleEdit(item.id)}>Save</button>
+        </Fragment> : item.title}</h4>
         <div className="d-flex gap-3">
             <button className="btn btn-danger w-100" onClick={() => handleRemove(item.id)}>Remove</button>
             <button className="btn btn-info w-100" onClick={() => setSingleTask(item)}>View</button>
