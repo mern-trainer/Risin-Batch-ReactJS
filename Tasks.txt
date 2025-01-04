@@ -15,3 +15,15 @@
 14. Create a state variable to store an array of objects, each with properties `id` and `completed`. Initialize it with some default values. Write a function to map over this array and return a new array with only the objects where `completed` is `true`.
 15. Create a state variable to store an array of objects, each with properties `id` and `value`. Initialize it with some default values. Write a function to map over this array and return a new array with each `value` incremented by 1.
 
+*********************************** 02/01/2025 ***************************************************
+
+16. Create a functional component that accepts a prop `name` and renders a greeting message with it.
+17. Create a functional component that accepts a prop `isAdmin` and renders a message according to the value of `isAdmin`.
+18. Create a functional component that accepts two props `count` and `max` and renders a warning message if `count` is greater than `max`.
+19. Create a functional component that accepts a prop `user` and renders a message according to whether the user is logged in or not.
+20. Create a functional component that accepts a prop `isLoggedIn` and renders a login button if `isLoggedIn` is `false`.
+21. Create a functional component that accepts a prop `tasks` and renders a list of tasks if `tasks.length > 0`, otherwise renders a message saying "No tasks available".
+22. Create a functional component that accepts a prop `searchQuery` and renders a search result list if `searchQuery` is not empty, otherwise renders a message saying "No results found".
+23. Create a functional component that accepts a prop `products` and renders a list of products if `products.length > 0`, otherwise renders a message saying "No products available".
+24. Create a functional component that accepts a prop `cartItems` and renders a list of cart items if `cartItems.length > 0`, otherwise renders a message saying "Your cart is empty".
+

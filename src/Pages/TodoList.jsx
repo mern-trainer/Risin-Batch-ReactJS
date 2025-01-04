@@ -9,6 +9,9 @@ const TodoList = () => {
     const [todo, setTodo] = useState("")
     const [todoList, setTodoList] = useState([]);
     const [singleTask, setSingleTask] = useState(null);
+    const [editTask, setEditTask] = useState(null);
+
+    console.log(editTask);
 
     const handleTodo = () => {
         if (todo == "") {
@@ -34,6 +37,16 @@ const TodoList = () => {
         setTodoList(response)
     }
 
+    const updateStatus = (id) => {
+        const response = todoList.map(todo => {
+            if (todo.id == id) {
+                return {...todo, status: todo.status == "pending" ? "completed" : "pending"}
+            }
+            return todo
+        })
+        setTodoList(response)
+    }
+
     return <div className="d-flex flex-column align-items-center mt-5">
         {/* {singleTask ? <SingleTaskView /> : null } */}
         {singleTask && <SingleTaskView singleTask={singleTask} setSingleTask={setSingleTask} /> }
@@ -44,7 +57,7 @@ const TodoList = () => {
         <div className='d-flex flex-column gap-2 mt-4 w-50'>
             {
                 todoList.map((item, index) => {
-                    return <TaskList setSingleTask={setSingleTask} handleRemove={handleRemove} item={item} key={index}/>
+                    return <TaskList editTask={editTask} setEditTask={setEditTask} updateStatus={updateStatus} setSingleTask={setSingleTask} handleRemove={handleRemove} item={item} key={index}/>
                 })
             }
         </div>
