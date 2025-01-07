@@ -4,6 +4,8 @@ import TaskList from '../Components/TaskList';
 import { v4 as uuidv4 } from "uuid"
 import SingleTaskView from '../Components/SingleTaskView';
 
+// Context api
+
 const TodoList = () => {
 
     const [todo, setTodo] = useState("")
