@@ -1,0 +1,31 @@
+**************************************** Context API Practical - 07/01/2025 **************************************************
+
+1. Create a context API that stores the user's preferred language and provides a function to update it.
+2. Create a context API that stores the user's location and provides a function to update it.
+3. Create a context API that stores the user's cart items and provides functions to add and remove items.
+4. Create a context API that stores the user's login status and provides a function to update it.
+5. Create a context API that stores the user's favorite items and provides functions to add and remove items.
+6. Create a context API that stores the user's search query and provides a function to update it.
+7. Create a context API that stores the user's settings and provides functions to update them.
+8. Create a context API that stores the user's notifications and provides functions to add and remove notifications.
+9. Create a context API that stores the user's profile information and provides functions to update it.
+10. Create a context API that stores the user's preferences and provides functions to update them.
+
+***************************************** Context API Theory - 07/01/2025 **************************************************
+
+11. What are the benefits of using the Context API in a React application?
+12. What is a Provider in the Context API?
+13. How do you use the useReducer hook with the Context API?
+14. Can you use the Context API with functional components?
+15. How does the Context API compare to Redux?
+16. How do you manage side effects in a Context API Provider?
+17. Can you use the Context API to manage state between components in different parts of an application?
+18. How does the Context API support server-side rendering?
+19. Can you use the Context API with React Hooks?
+20. What are some common use cases for the Context API in React?
+
+
+***************************************** Context API Logic - 07/01/2025 **************************************************
+
+21. How can Context API be used to manage user authentication state in a React application?
+
