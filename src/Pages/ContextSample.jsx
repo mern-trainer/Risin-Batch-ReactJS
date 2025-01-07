@@ -1,9 +1,9 @@
 import { useContext } from "react"
-import { MyContext } from "../App"
+import { CounterContext } from "../Providers/counterProvider"
 
 const Context = () => {
 
-    const { counter, setCounter } = useContext(MyContext)
+    const { counter, setCounter } = useContext(CounterContext)
 
     return <div>
         {counter}

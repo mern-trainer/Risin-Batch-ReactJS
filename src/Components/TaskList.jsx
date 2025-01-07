@@ -1,6 +1,9 @@
-import { Fragment, useState } from "react"
+import { Fragment, useContext, useState } from "react"
+import { TodoContext } from "../Providers/TodoProvider";
 
-const TaskList = ({ item, handleRemove, setSingleTask, updateStatus, handleEdit, setEditTask, editTask, setEditedTask, editedTask }) => {
+const TaskList = ({ item }) => {
+
+    const { handleRemove, handleEdit, updateStatus, setSingleTask, setEditTask, editedTask, setEditedTask, editTask } = useContext(TodoContext)
 
     return <div className="bg-dark p-3 text-light rounded">
         <h4>Title: {editTask?.id == item.id ? <Fragment>

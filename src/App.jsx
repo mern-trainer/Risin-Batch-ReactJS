@@ -1,4 +1,4 @@
-import { createContext, Fragment, useState } from "react"
+import { Fragment, useState } from "react"
 import LandingPage from "./Pages/LandingPage"
 import ArrayMapping from "./Pages/ArrayMapping"
 import ShopPages from "./Pages/ShopPages"
@@ -8,6 +8,8 @@ import TodoList from "./Pages/TodoList"
 import A from "./Pages/A"
 import { Toaster } from "react-hot-toast"
 import Context from "./Pages/ContextSample"
+import CounterProvider from "./Providers/counterProvider"
+import { TodoProvider } from "./Providers/TodoProvider"
 
 // context api => Provide a way to pass data through the component tree without having to pass props down manually at every level
 // global state management
@@ -15,23 +17,21 @@ import Context from "./Pages/ContextSample"
 
 // createContext => a function that returns a context object
 
-export const MyContext = createContext()
-
 const App = () => {
 
-    const [counter, setCounter] = useState(0)
-
-    return <MyContext.Provider value={{ counter, setCounter }}>
-        {/* <LandingPage /> */}
-        {/* <ShopPages /> */}
-        {/* <States /> */}
-        {/* <PasswordGenerator /> */}
-        {/* <TodoList /> */}
-        <Context />
-        {/* <A /> */}
-        {/* <ArrayMapping /> */}
-        <Toaster position="top-right"/>
-    </MyContext.Provider>
+    return <TodoProvider>
+        <CounterProvider>
+            {/* <LandingPage /> */}
+            {/* <ShopPages /> */}
+            {/* <States /> */}
+            {/* <PasswordGenerator /> */}
+            <TodoList />
+            {/* <Context /> */}
+            {/* <A /> */}
+            {/* <ArrayMapping /> */}
+            <Toaster position="top-right"/>
+        </CounterProvider>
+    </TodoProvider>
 }
 
 export default App
