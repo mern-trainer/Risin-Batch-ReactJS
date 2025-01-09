@@ -10,6 +10,7 @@ import { Toaster } from "react-hot-toast"
 import Context from "./Pages/ContextSample"
 import CounterProvider from "./Providers/counterProvider"
 import { TodoProvider } from "./Providers/TodoProvider"
+import { CartProvider } from "./Providers/CartProvider"
 
 // context api => Provide a way to pass data through the component tree without having to pass props down manually at every level
 // global state management
@@ -22,10 +23,12 @@ const App = () => {
     return <TodoProvider>
         <CounterProvider>
             {/* <LandingPage /> */}
-            {/* <ShopPages /> */}
+            <CartProvider>
+                <ShopPages />
+            </CartProvider>
             {/* <States /> */}
             {/* <PasswordGenerator /> */}
-            <TodoList />
+            {/* <TodoList /> */}
             {/* <Context /> */}
             {/* <A /> */}
             {/* <ArrayMapping /> */}
