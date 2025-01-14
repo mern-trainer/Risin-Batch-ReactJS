@@ -1,0 +1,13 @@
+1. How does the useEffect hook work in React?
+2. What is the purpose of the useEffect hook in React?
+3. How can you use the useEffect hook to fetch data from an API in React?
+4. What is the purpose of the dependency array in the useEffect hook?
+5. How can you use the useEffect hook to update the DOM in React?
+6. What is the difference between the useEffect hook and the useState hook in React?
+7. How can you use the useEffect hook to handle side effects in a functional component in React?
+8. What is the purpose of the cleanup function in the useEffect hook?
+9. How can you use the useEffect hook to create a timer in React?
+10. What is the best practice for handling errors in the useEffect hook?
+
+11. Create a news application using React that fetches news articles from a news API and displays them in a list. [api - https://ok.surf/api/v1/cors/news-feed]
+12. Create a product listing application using React that fetches a list of products from an API and displays them in a grid. [api - https://fakestoreapi.com/products] 
