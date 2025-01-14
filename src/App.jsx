@@ -11,6 +11,7 @@ import Context from "./Pages/ContextSample"
 import CounterProvider from "./Providers/counterProvider"
 import { TodoProvider } from "./Providers/TodoProvider"
 import { CartProvider } from "./Providers/CartProvider"
+import UseEffectComponent from "./Pages/UseEffectComponent"
 
 // context api => Provide a way to pass data through the component tree without having to pass props down manually at every level
 // global state management
@@ -24,7 +25,8 @@ const App = () => {
         <CounterProvider>
             {/* <LandingPage /> */}
             <CartProvider>
-                <ShopPages />
+                {/* <ShopPages /> */}
+                <UseEffectComponent />
             </CartProvider>
             {/* <States /> */}
             {/* <PasswordGenerator /> */}
