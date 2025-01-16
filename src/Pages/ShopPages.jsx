@@ -1,9 +1,9 @@
 import { FaShoppingCart, FaStar } from "react-icons/fa";
 import { shopProducts } from "../Constants/shop";
 import { Fragment } from "react";
-import Cart from "../Components/CartList";
 import { useCart } from "../Providers/CartProvider";
 import toast from "react-hot-toast";
+import Header from "../Components/Header";
 
 const ShopPages = () => {
 
@@ -27,6 +27,7 @@ const ShopPages = () => {
 
   return (
     <Fragment>
+      <Header />
       <div className="d-flex flex-wrap gap-2 justify-content-center py-3 bg-secondary">
       {shopProducts.map((product) => {
         return (
@@ -60,7 +61,6 @@ const ShopPages = () => {
         );
       })}
       </div>
-      <Cart />
     </Fragment>
   );
 };

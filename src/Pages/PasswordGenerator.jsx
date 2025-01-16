@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import Header from '../Components/Header'
 
 const PasswordGenerator = () => {
 
@@ -21,6 +22,7 @@ const PasswordGenerator = () => {
     }
 
     return <div className="d-flex flex-column align-items-center justify-content-center mt-5">
+        <Header />
         <div>
             <div>{generatedPassword}</div>
             <button className='btn btn-success' onClick={handleGeneratePassword}>Generate Random Password</button>

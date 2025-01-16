@@ -1,6 +1,7 @@
 import { FaStar, FaTrash } from "react-icons/fa";
 import { useCart } from "../Providers/CartProvider";
 import toast from "react-hot-toast";
+import Header from "./Header";
 
 const Cart = () => {
 
@@ -27,7 +28,8 @@ const Cart = () => {
         setCartList(updatedCart)
     }
 
-    return <div className="mt-5 bg-secondary">
+  return <div className="bg-secondary">
+      <Header />
         <h1 className="text-center">Cart</h1>
         <div className="d-flex gap-2 justify-content-center flex-wrap">
            {cartList.map((product) => {

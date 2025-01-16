@@ -17,6 +17,7 @@ const LandingPage = () => {
     ]
 
     return <Fragment>
+        <Header />
         <Navbar expand="md" className="bg-body-tertiary">
             <Container fluid>
                 <Navbar.Brand href="#home">
