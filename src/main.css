@@ -17,3 +17,7 @@ body{
 .hover-scale:hover{
     transform: scale(0.8);
 }
+
+::-webkit-scrollbar{
+    display: none;
+}
