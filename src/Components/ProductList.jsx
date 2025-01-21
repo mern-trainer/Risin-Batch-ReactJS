@@ -1,11 +1,16 @@
 import { FaStar } from "react-icons/fa"
+import { useNavigate } from "react-router"
 
 const ProductList = ({ product, children, cart }) => {
+
+    const navigate = useNavigate()
+
     return <div className="bg-light p-2 rounded"
         style={{ width: "15rem" }}
     >
         <div className="overflow-hidden">
-        <img
+            <img
+                onClick={() => navigate(`/product/${product.id}`)}
             src={product.thumbnail}
             alt={product.title}
             className="w-100 hover-scale"

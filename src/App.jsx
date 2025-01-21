@@ -15,6 +15,7 @@ import { BrowserRouter, Routes, Route } from "react-router"
 import Page1 from "./Pages/Page1"
 import Page2 from "./Pages/Page2"
 import Params from "./Pages/Params"
+import SingleProductPage from "./Pages/SingleProductPage"
 
 // context api => Provide a way to pass data through the component tree without having to pass props down manually at every level
 // global state management
@@ -34,7 +35,8 @@ const App = () => {
             <Route path="/" Component={LandingPage} />
             <Route path="/array-mapping" Component={ArrayMapping} />
             <Route path="/password-generator" Component={PasswordGenerator} />
-            <Route path="/shop" Component={ShopPages} />
+            <Route path="/products" Component={ShopPages} />
+            <Route path="/product/:product_id?" Component={SingleProductPage} />
             <Route path="/cart" Component={Cart} />
             <Route path="/page1" Component={Page1} />
             <Route path="/page2" Component={Page2} />
