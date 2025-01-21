@@ -2,6 +2,7 @@ import { Fragment } from "react"
 import "./LandingPage.css"
 import { Button, Card, Carousel, Container, Form, Image, Nav, Navbar, Stack } from "react-bootstrap"
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa"
+import Header from "../Components/Header"
 
 const LandingPage = () => {
 
