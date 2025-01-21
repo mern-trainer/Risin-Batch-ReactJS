@@ -7,13 +7,16 @@ const SingleProductPage = () => {
     const { product_id } = useParams()
     const [product, setProduct] = useState(null)
     const [currentImage, setCurrentImage] = useState("")
+    const [isLoading, setIsLoading] = useState(true)
 
     const fetchProduct = async () => {
         try {
             const { data } = await api.get(`/products/${product_id}`)
             setProduct(data)
             setCurrentImage(data.images[0])
+            setIsLoading(false)
         } catch (error) {
+            setIsLoading(false)
             console.log(error);
         }
     }   
@@ -23,7 +26,7 @@ const SingleProductPage = () => {
     }, [product_id])
 
     return <div className="container-fluid">
-        <div className="d-flex justify-content-center">
+        {!isLoading && <div className="d-flex justify-content-center">
             <div className="w-100 d-flex">
                 <div className="d-flex flex-column" style={{width: "100px"}}>
                     {
@@ -46,7 +49,10 @@ const SingleProductPage = () => {
                     <p>${(product?.price - ( product?.price * (product?.discountPercentage / 100))).toFixed(2)}</p>
                 </div>
             </div>
-        </div>
+        </div>}
+        {
+            isLoading && <div>Loading...</div>
+        }
     </div>
 }
 
