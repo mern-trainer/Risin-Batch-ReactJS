@@ -17,6 +17,7 @@ import Page2 from "./Pages/Page2"
 import Params from "./Pages/Params"
 import SingleProductPage from "./Pages/SingleProductPage"
 import FormPage from "./Pages/Form"
+import FormikPage from "./Pages/Formik"
 
 // context api => Provide a way to pass data through the component tree without having to pass props down manually at every level
 // global state management
@@ -43,6 +44,7 @@ const App = () => {
             <Route path="/page2" Component={Page2} />
             <Route path="/params/:random_number?" Component={Params} />
             <Route path="/form" Component={FormPage} />
+            <Route path="/formik" Component={FormikPage} />
         </Routes>
     </BrowserRouter>
 }
