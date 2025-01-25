@@ -18,6 +18,7 @@ import Params from "./Pages/Params"
 import SingleProductPage from "./Pages/SingleProductPage"
 import FormPage from "./Pages/Form"
 import FormikPage from "./Pages/Formik"
+import ReduxPage from "./Pages/ReduxPage"
 
 // context api => Provide a way to pass data through the component tree without having to pass props down manually at every level
 // global state management
@@ -27,6 +28,7 @@ import FormikPage from "./Pages/Formik"
 
 // React Router => A set of components that allows you to navigate between different pages in a React application.
 
+// Redux ->  
 const App = () => {
 
     // useNavigate => to navigate between pages
@@ -45,6 +47,7 @@ const App = () => {
             <Route path="/params/:random_number?" Component={Params} />
             <Route path="/form" Component={FormPage} />
             <Route path="/formik" Component={FormikPage} />
+            <Route path="/redux" Component={ReduxPage} />
         </Routes>
     </BrowserRouter>
 }

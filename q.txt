@@ -1,0 +1,50 @@
+-> ReactJS => 
+
+1. What is ReactJS? => A JavaScript library for building user interfaces.
+2  Features => 
+    a. Virtual DOM => A lightweight copy of the Real DOM => a JavaScript representation of the Real DOM
+    b. JSX => A syntax extension for JavaScript => allows you to write HTML-like code in JavaScript.
+    c. Components => A reusable building block for building user interfaces.
+    d. Unidirectional data flow => data flows one way from parent to child components.
+
+3. What is JSX => A syntax extension for JavaScript =>  allows you to write HTML-like code in JavaScript.
+4. DOM => Programming interface for web documents. Content manipulation, styles, and event handling.
+5. VDOM => A lightweight copy of the Real DOM
+6. state => An object that holds data that can change over time => similar to props but can change over time.
+7. How to create => useState()
+=> functional & class
+8. Hook => a function that allows you to use state and other React features in functional components
+9. useState => a Hook that allows you to have state variables in functional components => manages the state of the component
+10. useEffect => a Hook that allows you to perform side effects in functional components => to handle lifecycle of a component
+11. mounting => called after initial render
+12. updating => called after re-render - state/props change
+13. unmounting => called before component is removed
+14. context Api => a way to pass data between components without having to pass props manually
+15. props => passing data from parent to child
+16. Routing => a way to navigate between different pages in a web application {react-router}
+17. useParams() => a Hook that allows you to access the dynamic parameters in the current URL => to access the dynamic parameters in the current URL
+18. useNavigate() => a Hook that allows you to navigate between different pages in a web application
+19. <Link> => a component that allows you to create links to other pages in a web application
+20. cleanup function => a function that is called when a component is removed from the DOM.
+
+--> React Redux <--
+
+1. What is React Redux? => A state management library for React applications.
+2. Principles =>
+    a. Action => an object that represents an action to be performed on the state 
+              => contains a type and a payload.
+    b. Reducer => a function that takes the current state and an action and returns a new state.
+    c. Store {object} => a central location for managing the state of an application.
+
+3. Redux Flow: UI -> Action Creator -> Action -> Reducer Function -> returns new state -> store -> UI
+
+4. Slice => a set of reducers for a specific feature of the application.
+
+4. create Slice => createSlice() => creates a slice of the store and returns an object with the following properties:
+    a. reducer => a function that takes the current state and an action and returns a new state.
+    b. actions => an object that contains action creators for the slice.
+
+5. Create a store => configureStore()
+
+6. useDispatch() => a function that allows you to dispatch actions to the store.
+7. useSelector() => a function that allows you to select values from the store.
