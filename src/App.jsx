@@ -19,6 +19,9 @@ import SingleProductPage from "./Pages/SingleProductPage"
 import FormPage from "./Pages/Form"
 import FormikPage from "./Pages/Formik"
 import ReduxPage from "./Pages/ReduxPage"
+import TodoListPage from "./Pages/TodoListPage"
+import TodoEditPage from "./Pages/TodoEditPage"
+import TodoSingleView from "./Pages/TodoSingleView"
 
 // context api => Provide a way to pass data through the component tree without having to pass props down manually at every level
 // global state management
@@ -48,6 +51,9 @@ const App = () => {
             <Route path="/form" Component={FormPage} />
             <Route path="/formik" Component={FormikPage} />
             <Route path="/redux" Component={ReduxPage} />
+            <Route path="/todo-v2" Component={TodoListPage} />
+            <Route path="/todo-v2/edit/:id" Component={TodoEditPage} />
+            <Route path="/todo-v2/view/:id" Component={TodoSingleView} />
         </Routes>
     </BrowserRouter>
 }

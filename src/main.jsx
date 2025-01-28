@@ -15,7 +15,7 @@ createRoot(document.getElementById("root")).render(
             <TodoProvider>
                 <CartProvider>
                     <App />
-                    <Toaster />
+                    <Toaster position="top-right"/>
                 </CartProvider>
             </TodoProvider>
         </CounterProvider>
